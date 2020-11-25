@@ -37,8 +37,8 @@
     <!-- http://purl.obolibrary.org/obo/LITERO_000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LITERO_000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LITERO_000016"/>
-        <obo:IAO_0000115>A literary work of fiction that is the length of a book.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LITERO_000019"/>
+        <obo:IAO_0000115>A fictional work that is the length of a book.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">novel</rdfs:label>
     </owl:Class>
     
@@ -47,8 +47,8 @@
     <!-- http://purl.obolibrary.org/obo/LITERO_000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LITERO_000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115>A document that consists of a written work that has aesthetic value and artistic merit.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115>A generically dependent continuant that consists of a written work that has aesthetic value and artistic merit.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">literary work</rdfs:label>
     </owl:Class>
     
@@ -62,6 +62,56 @@
         <obo:comment>Poetry often employs rhyme and meter.</obo:comment>
         <rdfs:label xml:lang="en">poetry</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LITERO_000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LITERO_000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115>A generically dependent continuant that is part of a work of fiction and appears to be about some thing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fictional content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LITERO_000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LITERO_000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LITERO_000016"/>
+        <obo:IAO_0000115>A literary work that is about people, objects and situations that do not really exist.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fictional work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LITERO_000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LITERO_000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LITERO_000018"/>
+        <obo:IAO_0000115>A fictional content entity that appears to be about a person.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fictional character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LITERO_000021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/LITERO_000021">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+        <rdfs:label xml:lang="en">Charlotte Bronte</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
