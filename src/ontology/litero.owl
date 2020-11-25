@@ -26,6 +26,25 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LITERO_000023 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/LITERO_000023">
+        <rdfs:label xml:lang="en">as if about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -89,6 +108,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/LITERO_000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LITERO_000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/LITERO_000023"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A fictional content entity that appears to be about a person.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fictional character</rdfs:label>
     </owl:Class>
@@ -111,6 +136,15 @@
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/LITERO_000021">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
         <rdfs:label xml:lang="en">Charlotte Bronte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LITERO_000022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/LITERO_000022">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/LITERO_000020"/>
+        <rdfs:label xml:lang="en">Jane Eyre (person)</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
